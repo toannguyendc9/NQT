@@ -23,6 +23,31 @@
 body{
 background-image: url("w.jpg" );
 }
+	.tab button {
+    background-color: inherit;
+    float: center;
+    border: black;
+    outline: none;
+    cursor: pointer;
+    padding: 20px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color:#006400;
+}
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 200px 50px;
+    border: 3px solid #aaa;
+    border-top: none;
+}
 </style>
 <body>
 <header>
@@ -177,64 +202,25 @@ background-image: url("w.jpg" );
 		</div>
 	</div>
 	</div>
-	
+	<div class="tab">
+
+
+
+
+
+<button class="tablinks" onclick="openCity(event, 'GIÀY NEW')" id="defaultOpen"><a href="#">Trang chủ</a></button>
+<button class="tablinks" onclick="openCity(event, 'Thời khóa biểu')" id="defaultOpen" 	disabled="disabled">Thời khóa biểu</button>
+<button class="tablinks" onclick="openCity(event, 'SALEOFF70%')" id="defaultOpen"><a href="#">Điểm</a></button> 
+<button class="tablinks" onclick="openCity(event, 'PHỤ KIỆN')" id="defaultOpen"><a href="#">Học phí</a></button>
+<button class="tablinks" onclick="openCity(event, 'BLOG')" id="defaultOpen"><a href="#">Sinh hoạt</a></button>
+<button class="tablinks" onclick="openCity(event, 'BLOG')" id="defaultOpen"><a href="#">Hoạt động lớp</a></button>
+      
+
+
+ </div> 
 	
 
-	<div class="col-md-2.5">
-			<div class="team-box">
-				<h5><strong><center>Lab 1</strong></h5>
-				<p>
-					<center><a href = "link.html">Click here</a>
-				</p>
-				<p>__________________________________
-				
-			</div>
-			</div>
-		
 	
-	<div class="col-md-2.5">
-			<div class="team-box">
-				<h5><strong><center>Lab 2</strong></h5>
-				<p>
-					<center><a href = "link1.html">Click here</a>
-				</p>
-				<p>__________________________________
-			
-			</div>
-			</div>
-	
-	<div class="col-md-2.5">
-			<div class="team-box">
-				<h5><strong><center>Lab 3</strong></h5>
-				<p>
-					
-					<center><a href = "link2.html">Click here</a>
-				</p>
-				<p>__________________________________
-				
-			</div>
-			</div>
-	
-	<div class="col-md-2.5">
-			<div class="team-box">
-				<h5><strong><center>Lab 4</strong></h5>
-				<p>
-					<center><a href = "link3.html">Click here</a>
-				</p>
-				<p>__________________________________
-			
-			</div>
-			</div>
-	
-	<div class="col-md-2.5">
-			<div class="team-box">
-				<h5><strong><center>Lab 5</strong></h5>
-				<p>
-					<center><a href = "link4.html">Click here</a>
-				</p>
-				
-			</div>
-			</div>
 		</section>
 <!-- section works -->
 <!-- section contact -->
