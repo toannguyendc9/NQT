@@ -9,7 +9,7 @@ body {font-family: Arial;}
 .tab {
     overflow: hidden;
     border: 1px solid none;
-    background-color: purple;
+    background-color: #DCDCDC;
 }
 
 /* Style the buttons inside the tab */
@@ -26,31 +26,45 @@ body {font-family: Arial;}
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-    background-color: #ccc;
+    background-color: #778899;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-    background-color: #ccc;
+    background-color:#778899;
 }
 
 /* Style the tab content */
 .tabcontent {
     display: none;
     padding: 250px 50px;
-    border: 3px solid #aaa;
+    border: 6px solid #DCDCDC;
     border-top: none;
+}
+     .home {
+    background-color: #778899;
+
+    border: black;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 5px;
+    transition: 0.3s;
+    font-size: 10px;
 }
 </style>
 </head>
+    
 <body>
+    <div class="home">
+<center><a href="index.html"><button name="button" >Home</button></a></center>
+</div>
 
-<p><font size = 8><center><span>Exercise3</span></center></font></p>
+
 
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'Requirements')" id="defaultOpen">Requirements</button>
-  <button class="tablinks" onclick="openCity(event, 'Design')">Design</button>
-  <button class="tablinks" onclick="openCity(event, 'Implement')">Implement</button>
+  <button class="tablinks" onclick="openCity(event, 'Design')">Exercise 1</button>
+  <button class="tablinks" onclick="openCity(event, 'Implement')">Exercise 2</button>
 
 </div>
 
@@ -59,7 +73,8 @@ body {font-family: Arial;}
 </div>
 
 <div id="Design" class="tabcontent">
-  <p>Wait.</p> 
+  <button class="tablinks" onclick="openCity(event, 'Design')">Design</button>
+  <button class="tablinks" onclick="openCity(event, 'Implement')">Implement</button>
 </div>
 
 <div id="Implement" class="tabcontent">
