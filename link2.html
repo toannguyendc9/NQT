@@ -11,7 +11,18 @@ body {font-family: Arial;}
     border: 1px solid none;
     background-color: #DCDCDC;
 }
+a:link, a:visited {
+  background-color: 	#6495ED;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
 
+a:hover, a:active {
+  background-color: 		#A9A9A9;
+}
 /* Style the buttons inside the tab */
 .tab button {
     background-color: inherit;
@@ -72,14 +83,14 @@ body {font-family: Arial;}
   <p>Wait.</p>
 </div>
 
-<div id="Design" class="tabcontent">
-  <button class="tablinks" onclick="openCity(event, 'Design')">Design</button>
-  <button class="tablinks" onclick="openCity(event, 'Implement')">Implement</button>
+<div id="Design" class="a">
+  <a href = "Design.html">Design</a> <a href = "Design.html">Implement</a>
 </div>
 
-<div id="Implement" class="tabcontent">
-  <p>Wait.</p>
+<div id="Implement" class="b">
+ 
 </div>
+
 
 <script>
 function openCity(evt, cityName) {
