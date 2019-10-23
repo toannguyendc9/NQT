@@ -1,137 +1,299 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="no-js" lang="zxx">
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {font-family: Arial;}
-/* Style the tab */
-.tab {
-    overflow: hidden;
-    border: 1px solid none;
-    background-color: #DCDCDC;
-}
-/* Style the buttons inside the tab */
-.tab button {
-    background-color: inherit;
-    float: center;
-    border: black;
-    outline: none;
-    cursor: pointer;
-    padding: 20px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-}
-/* Change background color of buttons on hover */
-.tab button:hover {
-    background-color:#778899;
-}
-/* Create an active/current tablink class */
-.tab button.active {
-    background-color:#778899;
-}
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    padding: 250px 50px;
-    border: 6px solid #DCDCDC;
-    border-top: none;
-}
-    .home {
-    background-color: #778899;
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Lab1</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--bts menu-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png"> -->
+    <!-- Place favicon.ico in the root directory -->
 
-    border: black;
-    outline: none;
-    cursor: pointer;
-    padding: 5px 5px;
-    transition: 0.3s;
-    font-size: 10px;
-}
-   a:link, a:visited {
-   color: black;
-  text-decoration: none;
-background-color: #DCDCDC;
- 
-}
-	a:hover, a:active {
-  background-color: #778899;
-}
-</style>
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/gijgo.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
+
+
+
 <body>
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
 
-<div class="home">
-<center><a href="index.html"><button name="button" >Home</button></a></center>
-</div>
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Requirements')" id="defaultOpen">Requirements</button>
-  <button class="tablinks" onclick="openCity(event, 'Design')">Design</button>
-  <button class="tablinks" onclick="openCity(event, 'Implement')"><a href="a.html" target="about_a">Implement</a></button>
+<!-- header-start -->
+<header>
+    <div class="header-area ">
+        <div id="sticky-header" class="main-header-area">
+            <div class="container-fluid p-0">
+                <div class="row align-items-center justify-content-between no-gutters">
+                    <div class="col-xl-2 col-lg-2">
+                        <div class="logo-img">
+                            <a href="index.html">
+                                 <img src = "./img/logo.png" width="150" height="45"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-8">
+                        <div class="main-menu  d-none d-lg-block">
+                            <nav>
+                                <ul id="navigation">
+                                    <li><a  href="index.html">Home</a></li>
+                                    <li><a class="active" href="lab1.html">Lab1</a></li>
+                                    <li><a href="lab2.html">Lab2</a></li>
+                                    <li><a href="lab3.html">Lab3</a></li>
+                                    <li><a href="lab4.html">Lab4</a></li>
+                                    <li><a href="lab5.html">Lab5</a></li>
+                                    <li><a href="about.html">About</a></li>
 
-</div>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-2 d-none d-lg-block">
+                        <div class="social_media_links">
+                            <ul>
+                               <li>
+                                        <a href="https://www.facebook.com/toan.nguyend.c.9" target ="fb_blank">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/nqtoan8/" target ="ins_blank">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mobile_menu d-block d-lg-none"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- header-end -->
+<!--nd-->
+<section class="banner_post" >
 
-<div id="Requirements" class="tabcontent">
-    
-  <p>Chọn 1 đối tượng bất kỳ trong thế giới thực, ví dụ
-như sinh viên, môn học, giảng viên,… để thiết kế trên phần
-mềm một chức năng trên web để thêm, sửa, xóa, tìm kiếm
-      cho đối tượng đó.</p>
-        <p> - Ở tab design: Thiết kế đối tượng ấy trên giấy sau đó vẽ lại bằng phần mền figma, chụp ảnh lại và đặt download cho tấm ảnh  </p>
-      
-        <p> - Ở tab implement: Hiện thực trang thiết kế ở figma sang thành html </p>
-        </p>
-    <br>
-    <br>
-    
-   
-</div>
+    <div class="container">
+        <center><h2><strong>Lab1</strong></h2></center>
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home" style="font-size: 18px">Requirement</a></li>
+            <li><a data-toggle="tab" href="#menu1" style="font-size: 18px">Design</a></li>
+            <li><a href="a.html" target="_blank" style="font-size: 18px">Implement</a></li>
+
+        </ul>
+
+        <div class="tab-content">
+            <div id="home" class="tab-pane active">
+                <p style="font-size:18px;font-family:'Times New Roman'"> Chọn 1 đối tượng bất kỳ trong thế giới thực, ví dụ
+                    như sinh viên, môn học, giảng viên,… để thiết kế trên phần mềm một chức năng trên web để <b>thêm, sửa, xóa, tìm kiếm</b>
+                    cho đối tượng đó.</p>
+            </div>
+
+            <div id="menu1" class="tab-pane fade">
+
+                <div>
+                    <h3><center><u>Design by note</u></center></h3>
+                    <center><img src="note.jpg" width="600" height="700"/></center>
+                    <center><a href="note.jpg" download="note.jpg"><img src="https://2.bp.blogspot.com/-JEOlqZXt74E/V5NuodbKjeI/AAAAAAAAbls/rCtpODR_NXEgGTjYzR59ZlWwlY74wnHJACLcB/s1600/123tailieufree.com.png"   width="30px" height="auto"/></a></center>
+                </div>
+                <br>
+                <br>
+                <br>
+                <h3><center><u>Design by figma</u></center></h3>
+                <center><img src="figmads.png" width="500" height="330"/>
+                    <img src="f1.png" width="500" height="330"/>
+                    <center><img src="f2.png" width="500" height="330"/>
+                        <img src="f3.png" width="500" height="330"/>
+                        <center><a href = "fig.fig"><img src="https://2.bp.blogspot.com/-JEOlqZXt74E/V5NuodbKjeI/AAAAAAAAbls/rCtpODR_NXEgGTjYzR59ZlWwlY74wnHJACLcB/s1600/123tailieufree.com.png"   width="30px" height="auto"/></a></center>
+                        <a href="default.asp"><center>
+                            <br>
+
+                            <center><a href = "https://www.figma.com/proto/P3ElN0mcYG6lO7Pf6M1nfI/Untitled?node-id=2%3A4&scaling=min-zoom">SEE ALL FIGMA'S DESIGN</a></center>
+                            <br>
+                            <br>
+                            <br>
+                            <center> <a href="images.rar" download="images.rar">Download All</a></center>
+
+            </div>
+            <!--            <div id="menu2" class="tab-pane fade">-->
+            <!--                &lt;!&ndash;Hien thuc html&ndash;&gt;-->
+            <!--                &lt;!&ndash;Ket thuc phan hien thuc html&ndash;&gt;-->
+            <!--            </div>-->
+
+        </div>
+    </div>
+
+</section>
+
+<!-- footer_start -->
+<footer class="footer">
+    <div class="footer_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-md-6 col-lg-3">
+                    <div class="footer_widget">
+                        <div class="footer_logo">
+                            <a href="index.html">
+                                <img src = "./img/logo.png" width="150" height="45"/>
+                            </a>
+                        </div>
+                       <p class="footer_text">36/63, A-zone, Kha Van Can road, Thu Duc <br>
+                                +8472175298 <br>
+                                <a class="domain" href="#">toannguyendc9@gmail.com</a></p>
+                        <div class="socail_links">
+                            <ul>
+                               <li>
+                                        <a href="https://www.facebook.com/toan.nguyend.c.9" target ="fb_blank">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/nqtoan8/" target ="ins_blank">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-6 col-lg-2">
+                    <div class="footer_widget">
+                        <h3 class="footer_title">
+                           Exercise
+                            </h3>
+                            <ul>
+                                <li><a href="lab1.html">Lab1</a></li>
+                                <li><a href="lab2.html">Lab2</a></li>
+                                <li><a href="lab3.html">Lab3</a></li>
+                                <li><a href="#">Lab4</a></li>
+                                <li><a href="#">Lab5</a></li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-6 col-lg-2">
+                    <div class="footer_widget">
+                        <h3 class="footer_title">
+                            Useful Links
+                        </h3>
+                        <ul>
+                           <li><a href="about.html">About</a></li>
+                                <li><a href="https://hci2019group12.tk/" target="group12_blank">Group12</a></li>
+                                <li><a href="about.html"> Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="footer_widget">
+                        <h3 class="footer_title">
+                            Subscribe
+                        </h3>
+                        <form action="#" class="newsletter_form">
+                            <input type="text" placeholder="Enter your mail">
+                            <button type="submit">Sign Up</button>
+                        </form>
+                        <p class="newsletter_text">Subscribe newsletter to get updates</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copy-right_text">
+        <div class="container">
+            <div class="footer_border"></div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <p class="copy_right text-center">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                       Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This web is made by <i class="fa fa-heart-o" aria-hidden="true"></i> 
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer_end -->
 
 
-<div id="Design" class="tabcontent">
-    <div>
-    <h3><center><u>Design by note</u></center></h3>
-    <center><img src="note.jpg" width="600" height="700"/></center>
-    <center><a href="note.jpg" download="note.jpg"><img src="https://2.bp.blogspot.com/-JEOlqZXt74E/V5NuodbKjeI/AAAAAAAAbls/rCtpODR_NXEgGTjYzR59ZlWwlY74wnHJACLcB/s1600/123tailieufree.com.png"   width="30px" height="auto"/></a></center>
-    </div> 
-    <br>
-    <br>
-    <br>
-   <h3><center><u>Design by figma</u></center></h3>
-  <center><img src="figmads.png" width="500" height="330"/>
-   <img src="f1.png" width="500" height="330"/>
-   <center><img src="f2.png" width="500" height="330"/>
-   <img src="f3.png" width="500" height="330"/>
-   <center><a href = "fig.fig"><img src="https://2.bp.blogspot.com/-JEOlqZXt74E/V5NuodbKjeI/AAAAAAAAbls/rCtpODR_NXEgGTjYzR59ZlWwlY74wnHJACLcB/s1600/123tailieufree.com.png"   width="30px" height="auto"/></a></center>
-    <a href="default.asp"><center>
-    <br>
-	   
-	<center><a href = "https://www.figma.com/proto/P3ElN0mcYG6lO7Pf6M1nfI/Untitled?node-id=2%3A4&scaling=min-zoom">SEE ALL FIGMA'S DESIGN</a></center>
-     <br>
-    <br>
-    <br>
-    <center> <a href="images.rar" download="images.rar">Download All</a></center>
-   
-</div>
-   
-    
+<!-- JS here -->
+<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="js/vendor/jquery-1.12.4.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/ajax-form.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/scrollIt.js"></script>
+<script src="js/jquery.scrollUp.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/nice-select.min.js"></script>
+<script src="js/gijgo.min.js"></script>
+<script src="js/jquery.slicknav.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/plugins.js"></script>
 
+<!--contact js-->
+<script src="js/contact.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/jquery.form.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/mail-script.js"></script>
+
+<script src="js/main.js"></script>
 
 <script>
-function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+    $('#datepicker').datepicker({
+        iconsLibrary: 'fontawesome',
+        // disableDaysOfWeek: [0, 0],
+        //     icons: {
+        //      rightIcon: '<span class="fa fa-caret-down"></span>'
+        //  }
+    });
+    $('#datepicker2').datepicker({
+        iconsLibrary: 'fontawesome',
+        icons: {
+            rightIcon: '<span class="fa fa-caret-down"></span>'
+        }
+
+    });
+    var timepicker = $('#timepicker').timepicker({
+        format: 'HH.MM'
+    });
 </script>
-     
 </body>
-</html> 
+
+</html>
