@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Repassword</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/create-account.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../Images/gamehublogo.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.min.js"></script>
+    <script src="script/validate.js"></script>
+<style>
+.head{
+font-color:red;
+font-family: Arial;
+font-weight: bold;
+color: 		#F08080;
+}
+.bt{
+color: white;
+background-color:		#F08080;
+ width: 100%;
+  padding: 10px;
+  border: black;
+  border-radius: 7px;
+  margin: 1spx 0;
+  opacity: 1;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 10px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+
+
+</style>
+</head>
+<body>
+      <form action="/action_page.php"><div class="form-group">
+<center><h3 style"font-size:10">Thêm vào giỏ hàng</h3>
+<input name="display_name" type="text" class="form-control " placeholder="Mã sản phẩm">
+<div class="invalid-feedback"></div>
+</div>
+<div class="form-group"><input name="phone" type="text" class="form-control " placeholder="Tên sản phẩm" value="">
+<div class="invalid-feedback">
+</div>
+</div>
+<div class="form-group d-flex align-items-center">
+<div class="input-group input-group--password">
+<input type="password" name="password" class="form-control " placeholder="Thông tin sản phẩm">
+<a class="input-icon text-dark" style="display: block; bottom: 0px;"><i class="svg-icon show-
+password"></i></a><a class="input-icon text-dark" style="display: none;
+ bottom: 0px;"><i class="svg-icon hide-password"></i></a>
+<div class="invalid-feedback"></div>
+</div>
+</div>
+
+<div class="s"><label>Số lượng</label>
+<select name="day" class="custom-select w-auto mr-2"><option value="1942">1</option><option value="1943">2</option>
+<option value="1944">3</option>
+<option value="1946">4</option>
+<option value="1948">5</option>
+<option value="1950">6</option>
+<option value="1952">7</option>
+<option value="1954">8</option>
+<option value="1956">9</option></select>
+<label>Size</label>
+<select name="day" class="custom-select w-auto mr-2"><option value="1942">35</option><option value="1943">36</option>
+<option value="1944">37</option>
+<option value="1944">38</option>
+<option value="1944">39</option>
+<option value="1944">40</option>
+<option value="1944">41</option>
+<option value="1944">42</option>
+
+</select>
+<label>Màu</label>
+<select name="day" class="custom-select w-auto mr-2"><option value="1942">Xanh dương</option><option value="1943">Xanh lá</option>
+<option value="1944">Đỏ</option>
+<option value="1946">Tím</option>
+<option value="1948">Vàng</option>
+<option value="1950">Cam</option>
+<option value="1952">Đen</option>
+<option value="1954">Trắng</option>
+<option value="1956">Hồng</option></select>
+
+
+
+	<label>Giao hàng</label>
+<select name="day" class="custom-select w-auto mr-2"><option value="1942">Bưu điện</option><option value="1943">GHTK</option>
+<option value="1944">Shipcod</option>
+<option value="1946">GHN</option>
+<option value="1948">DBL</option>
+
+
+
+
+</select></div></div></div>
+<br>
+
+
+
+
+<div class="con">
+
+<button class="bt">Xác nhận</button>
+
+</div>
+</body>
+</html>
