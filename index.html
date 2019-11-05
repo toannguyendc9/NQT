@@ -1,232 +1,649 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Nguyen Quoc Toan</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ <script src="https://www.w3schools.com/lib/w3.js"></script>
+<title>Lab4</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+.bt{ background-color:			#FF8C00;
+   
+    border: black;
+    outline:red;
+    cursor: pointer;
+    padding: 7px 30px;
+    transition: 0.3s;
+    font-size: 15px;
+}
 
-    <!-- <link rel="manifest" href="site.webmanifest"> -->
-    <!-- <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png"> -->
-    <!-- Place favicon.ico in the root directory -->
+.active {
+  background-color: #717171;
+}
 
-    <!-- CSS here -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <link rel="stylesheet" href="css/nice-select.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/gijgo.css">
-    <link rel="stylesheet" href="css/slicknav.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+       
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #111;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+        }
+
+        .openbtn:hover {
+            background-color: #444;
+        }
+
+        #main1 {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+
+        /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+        @media screen and (max-height: 450px) {
+            .sidebar {padding-top: 15px;}
+            .sidebar a {font-size: 18px;}
+        }
+    </style>
 </head>
 
 <body>
-    <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-
-    <!-- header-start -->
-    <header>
-        <div class="header-area ">
-            <div id="sticky-header" class="main-header-area">
-                <div class="container-fluid p-0">
-                    <div class="row align-items-center justify-content-between no-gutters">
-                        <div class="col-xl-2 col-lg-2">
-                            <div class="logo-img">
-                                <a href="index.html">
-                                   <img src = "./img/logo.png" width="150" height="45"/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-xl-7 col-lg-8">
-                            <div class="main-menu  d-none d-lg-block">
-                                <nav>
-                                    <ul id="navigation">
-                                        <li><a class="active" href="index.html">Home</a></li>
-                                        <li><a href="labs.html">Exercise</a></li>
-                                        <li><a href="about.html">About</a></li>
-
-
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-2 d-none d-lg-block">
-                            <div class="social_media_links">
-                                <ul>
-                                    <li><a href="https://www.facebook.com/toan.nguyend.c.9" target="fb_blank"> <i class="fa fa-facebook"></i> </a></li>
-                                    <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
-                                    <li><a href="https://www.instagram.com/nqtoan8/" target= "ins_blank"> <i class="fa fa-instagram"></i> </a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="mobile_menu d-block d-lg-none"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<div id="banner"><img src="images/sa.jpg" border="10" width="1000" height="150" >
+</div>
+<div id="page">
+	<div id="time">
+    	<div style="float:left; padding-top:5px; padding-left:15px">
+        <div id="ngaythang" align="right">
+	<script language="javascript" type="text/javascript">
+	id1 = setInterval("show_current_time()", 1000);
+	function show_current_time() {
+	thus=new Array("Chủ Nhật","Thứ Hai","Thứ Ba","Thứ Tư","Thứ Năm","Thứ Sáu","Thứ Bảy");
+	var d = new Date()
+	thu=d.getDay()
+	ngay=d.getDate()
+	thang=d.getMonth()+1
+	nam = d.getFullYear();
+	gio = d.getHours();
+	phut = d.getMinutes();
+	giay = d.getSeconds();
+	giay = (giay < 10) ? "0" + giay : giay;
+	document.getElementById("ngaythang").innerHTML ="<span style='padding-top:5px; padding-right:10px; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px;'>"+gio+"h"+phut+"'  "+thus[thu]+", " + ngay + "/" + thang + "/" + nam +  "</span>";
+		}
+	</script>
         </div>
-    </header>
-    <!-- header-end -->
-
-    <!-- slider_area_start -->
-    <div class="slider_area ">
-        <div class="slider_area_inner slider_bg_1 d-flex align-items-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-7">
-                        <div class="single_slider">
-                            <div class="slider_text">
-                                <p><span>Nguyen Quoc Toan</span><p>
-                                   <p> 17130249</p>
-                                <p>Teacher: Tran Thi Thanh Nga</p>
-                                <a href="#" class="boxed-btn4 ">More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
-    <!-- slider_area_end -->
+    <div id="left">
+    	<div class="caption_l">	Danh mục</div>
+        <div class="content">
+        	<div class="category">
+            	<div class="list"></div>
+                <div class="title"><a href=""> Giới thiệu về trường</a></div>
+            </div>
+            <div class="category">
+            	<div class="list"></div>
+                <div class="title"><a href=""> Ban giám hiệu</a></div>
+            </div>
+            <div class="category">
+            	<div class="list"></div>
+                <div class="title"><a href=""> Kế hoạch trường</a></div>
+            </div>
+            <div class="category">
+            	<div class="list"></div>
+                <div class="title"><a href=""> Hoạt động đoàn thể</a></div>
+            </div>
+            <div class="category">
+            	<div class="list"></div>
+                <div class="title"><a href=""> Kết quả học tập</a></div>
+            </div>
+            <div class="category">
+            	<div class="list"></div>
+                <div class="title"><a href=""> Tổ chuyên môn</a></div>
+            </div>
+ <div class="category">
+            	<div class="list"></div>
+                <div class="title"><a href=""> Kỷ niệm về mái trường</a></div>
+            </div>
 
-    <!-- about_area _start  -->
-
-    <!-- about_area _end -->
-
-    <!-- practice_area_start -->
-    
-    <!-- practice_area_end -->
-
-    <!-- our_loyers-start  -->
-
-    <!-- our_loyers-end  -->
-
-    <!-- testmonial_area_start  -->
-
-    <!-- testmonial_area_end  -->
-
-    
-
-        
-            
-                
-          
-               
-                  
-
-                        <h3><center><span><strong>INTRO</strong></h3>
-                         <center><p><strong>Human–computer interaction (HCI)</strong> researches the design and use of computer technology, focused on the interfaces between people (users) and computers. Researchers in the field of HCI observe the ways in which humans interact with computers and design technologies that let humans interact with computers in novel ways. As a field of research, human–computer interaction is situated at the intersection of computer science, behavioural sciences, design, media studies, and several other fields of study.<center> </p>
-                  
-             
-          
            
-               
+           
+        <div style="clear:both"></div>
+        </div>
+        <div class="caption_l" style="margin-top:10px;">Kế hoạch hoạt động</div>
 
-                    
-                               
-                            
-                  
-               
-                
-                  
-
-    <!-- footer_start -->
-   <div class="footer">
-
-        <div class="copy-right_text">
-            <div class="container">
-                <div class="footer_border"></div>
-                <div class="row">
-                    <div class="col-sm-6">
-<p class="p">Location</p>
-<p class="footer_text">36/63, A-zone, Kha Van Can road, Thu Duc <br>
-                                +8472175298 <br>
-                                <a class="domain" href="#">toannguyendc9@gmail.com</a></p>
-</div>
- <div class="col-sm-6" style="padding-left:245px">
-
-                        
-                            <p class="p">Useful Links</p>
-                            <ul style="font-size: 17px">
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="https://hci2019group12.tk/" target="group12_blank">Group12</a></li>
-                                <li><a href="about.html"> Contact</a></li>
-                            </ul>
-                       
-</div>
-<div class="2@" style="padding-left: 400px">
-                        <p class="copy_right text-center">
-                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This web is made by <i class="fa fa-heart-o" aria-hidden="true"></i> 
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        </p>
-</div>
-                    </div>
-                </div>
+         
+ <div class="content">
+        	<div class="category">
+            	<div class="list"></div>
+                <div class="title"><a href=""> Giới thiệu về trường</a></div>
+            </div>
+            <div class="category">
+            	<div class="list"></div>
+                <div class="title"><a href=""> Ban giám hiệu</a></div>
+            </div>
+            <div class="category">
+            	<div class="list"></div>
+                <div class="title"><a href=""> Kế hoạch trường</a></div>
+            </div>
+            <div class="category">
+            	<div class="list"></div>
+                <div class="title"><a href=""> Hoạt động đoàn thể</a></div>
+            </div>
+            <div class="category">
+            	<div class="list"></div>
+                <div class="title"><a href=""> Kết quả học tập</a></div>
+            </div>
+            <div class="category">
+            	<div class="list"></div>
+                <div class="title"><a href=""> Tổ chuyên môn</a></div>
+            </div>
+         	<div style="width:200px; height:200px; margin:auto; background:#FFF"></div>
+         
+         </div>
+      <div style="clear:both"></div>  
+<div class="caption_l" style="margin-top:10px;">Tin từ Bộ GD&ĐT</div>
+ <div class="content">
+        	<div class="category">
+            	<div class="list"></div>
+                <div class="title"><a href=""> Giới thiệu về trường</a></div>
+            </div>
+            <div class="category">
+            	<div class="list"></div>
+                <div class="title"><a href=""> Ban giám hiệu</a></div>
+            </div>
+            <div class="category">
+            	<div class="list"></div>
+                <div class="title"><a href=""> Kế hoạch trường</a></div>
+            </div>
+            <div class="category">
+            	<div class="list"></div>
+                <div class="title"><a href=""> Hoạt động đoàn thể</a></div>
+            </div>
+            <div class="category">
+            	<div class="list"></div>
+                <div class="title"><a href=""> Kết quả học tập</a></div>
+            </div>
+            <div class="category">
+            	<div class="list"></div>
+                <div class="title"><a href=""> Tổ chuyên môn</a></div>
+            </div>
+         	<div style="width:200px; height:200px; margin:auto; background:#FFF"></div>
+         
+         </div>
+    </div>
+  
+        
+    <div id="main">
+<div class="top">
+        	<div class="top1"></div>
+            <div class="top2"><div style="float:left;  color:#FFF; font-weight:bold; font-size:14px; padding-left:10px; padding-top:8px">Trang chủ</div>
+            <div class="ten"></div>
+            <div style="float:right">
+            <form>
+            <input type="text" class="inputsearch" />
+            <input type="submit" class="btsearch" value="" />
+            </form>
+            
+            </div>
+            </div>
+            <div class="top3"></div>
+        </div>
+    
+	
+<br>
+        <div class="wellcome" style="
+    height: 22px;">
+        	<div class="vien" style=" background-color: white;
+    border: 0px;">
+            <marquee width="510px" direction="left" scrollamount="2" style="color:		#F08080;font-weight: bold; font-size:15px">
+            Chào mừng bạn đến với cổng thông tin trường THPT Nguyễn Tri Phương
+            </marquee>
             </div>
         </div>
+        <div id="top_caption"  style="padding-left: 188px;">THÔNG TIN - HOẠT ĐỘNG</div>
+        <div id="top_content">
+        	<div class="line" style="width: 530px;"><img src="images/post_old.gif" />&nbsp;<a style="font-size:14px; color:#F00" href="">Thời khóa biểu học kì I, năm học 2019-2020 (áp dụng từ 04/11/2019)</a><div style="float:right; font-size:11px; font-style:italic"></div></div>
+            <div class="line" style="width: 530px;"><img src="images/post_old.gif" />&nbsp;<a style="font-size:14px; color:#F00" href="">Thông báo quỹ lớp học kỳ 1 </a></div>
+            <div class="line" style="width: 530px;"><img src="images/post_old.gif" />&nbsp;<a style="font-size:14px; color:#F00" href="">Kế hoạch chuẩn bị cho ngày nhà giáo Việt Nam 20-11 </a><div style="float:right; font-size:11px; font-style:italic"></div></div>
+            <div class="line" style="width: 530px;"><img src="images/post_old.gif" />&nbsp;<a style="font-size:14px; color:#F00" href="">Hướng dẫn bổ sung, sửa đổi Thông tư 96/2002/TT-BTC ngày 24/10/2019</a><div style="float:right; font-size:11px; font-style:italic"></div></div>
+            <div class="line" style="width: 530px;"><img src="images/post_old.gif" />&nbsp;<a style="font-size:14px; color:#F00" href="">Bổ sung, cập nhật các chứng chỉ nghề tại các trung tâm giáo dục thường xuyên </a><div style="float:right; font-size:11px; font-style:italic"></div></div>
+            <div class="line" style="width: 530px;" ><img src="images/post_old.gif" />&nbsp;<a style="font-size:14px; color:#F00" href="">Tổ chức sinh hoạt ngoài trời cho học sinh toàn trường vào thứ 5 hàng tuần</a></div>
+            <div class="line" style="width: 530px;"><img src="images/post_old.gif" />&nbsp;<a style="font-size:14px; color:#F00" href="">Các hoạt động chuẩn bị cho lễ khai giảng năm học 2019-2020 và phương hướng cho năm học mới</a></div>
+            <div class="line" style="width: 530px;"><img src="images/post_old.gif" />&nbsp;<a style="font-size:14px; color:#F00" href="">Lịch nhập học, nhận lớp, GVCN</a></div>
+
+        </div>
+        <div id="box_main">
+        	<div class="category">
+            	<div class="category_name"><a href="">THÔNG TIN TUYỂN SINH</a></div>
+            </div>
+            <div class="contenth">
+            	<div class="boxcontent">
+                <table width="100%" border="0" cellpadding="0" cellpadding="0" >
+                <tr valign="top">
+                <td width="50px"><img src="images/forum_old-48.png" /></td>
+                <td width="250px;">
+                <div style="width:250px; float:left"><span><a style="color:#F00; font-size:14px; font-weight:bold" href="">Kế hoạch tuyển sinh vào trường THPT Nguyễn Tri Phương năm học 2019-2020</a></span>&nbsp;<span style="font-style:italic; font-size:11px">(408 Viewing)</span> </div>
+                <div style="width:250px; float:left; font-size:11px">Danh sách các học sinh trúng tuyển vào trường ...</div>
+                <div style="float:left; width:250px;">
+                <table width="250px" border="0" cellpadding="0" cellspacing="0">
+                <tr valign="top">
+                <td width="15"><img src="images/subforum_old-48.png" /></td>
+                <td><div><a style="font-size:11px; color:#ff6701" href="">Phản hồi</a></div></td>
+                <td width="15"><img src="images/subforum_old-48.png" /></td>
+                <td><div><a style="font-size:11px; color:#ff6701" href="">Xem thêm</a></div></td>
+                </tr>
+                
+                </table>
+                </div>
+                
+                </td>
+                <td>
+                <div>
+		<img src = "images/ts1.jpg" width ="220" height="100"/>
+		</div>
+                </td>
+                </tr>
+                </table>
+                </div>
+                <div class="boxcontent">
+                <table width="100%" border="0" cellpadding="0" cellpadding="0" >
+                <tr valign="top">
+                <td width="50px"><img src="images/forum_old-48.png" /></td>
+                <td width="250px;">
+                <div style="width:250px; float:left"><span><a style="color:#F00; font-size:14px; font-weight:bold" href="">Thông tin về việc tổ chức kỳ thi THPT Quốc gia năm học 2018-2019 của Bộ GD&ĐT</a></span>&nbsp;<span style="font-style:italic; font-size:11px">(500 Viewing)</span> </div>
+                <div style="width:250px; float:left; font-size:11px">Kỳ thi THPT tổ chức tại trường THPT Nguyễn Tri Phương ...</div>
+                <div style="float:left; width:250px;">
+                <table width="250px" border="0" cellpadding="0" cellspacing="0">
+                <tr valign="top">
+                <td width="15"><img src="images/subforum_old-48.png" /></td>
+                <td><div><a style="font-size:11px; color:#ff6701" href="">Thuế môn bài</a></div></td>
+                <td width="15"><img src="images/subforum_old-48.png" /></td>
+                <td><div><a style="font-size:11px; color:#ff6701" href="">Thuế môn bài</a></div></td>
+                </tr>
+                
+                </table>
+                </div>
+                
+                </td>
+                <td>
+                <div>
+		<img src = "images/ts2.jpg" width ="220" height="100"/>
+		</div>
+                </td>
+                </tr>
+                </table>
+                </div>
+                <div class="boxcontent">
+                <table width="100%" border="0" cellpadding="0" cellpadding="0" >
+                <tr valign="top">
+                <td width="50px"><img src="images/forum_old-48.png" /></td>
+                <td width="250px;">
+                <div style="width:250px; float:left"><span><a style="color:#F00; font-size:14px; font-weight:bold" href="">Bộ giáo dục và Đào tạo công bố bộ Đề thi tham khảo THPT quốc gia năm 2019-2020</a></span>&nbsp;<span style="font-style:italic; font-size:11px">(300 Viewing)</span> </div>
+                <div style="width:250px; float:left; font-size:11px">Ngày 27/06/2019 Bộ GD&ĐT công bố bộ đề thi tham khỏa ...</div>
+                <div style="float:left; width:250px;">
+                <table width="250px" border="0" cellpadding="0" cellspacing="0">
+                <tr valign="top">
+                <td width="15"><img src="images/subforum_old-48.png" /></td>
+                <td><div><a style="font-size:11px; color:#ff6701" href="">Phản hồi</a></div></td>
+                <td width="15"><img src="images/subforum_old-48.png" /></td>
+                <td><div><a style="font-size:11px; color:#ff6701" href="">Xem thêm</a></div></td>
+                </tr>
+                
+                </table>
+                </div>
+                
+                </td>
+                <td>
+                <div>
+		<img src = "images/ts3.png" width ="220" height="100"/>
+		</div>
+                </td>
+                </tr>
+                </table>
+                </div>
+                <div class="boxcontent">
+                <table width="100%" border="0" cellpadding="0" cellpadding="0" >
+                <tr valign="top">
+                <td width="50px"><img src="images/forum_old-48.png" /></td>
+                <td width="250px;">
+                <div style="width:250px; float:left"><span><a style="color:#F00; font-size:14px; font-weight:bold" href="">Một số lưu ý dành cho thí sinh khi đăng ký nguyện vọng</a></span>&nbsp;<span style="font-style:italic; font-size:11px">(198 Viewing)</span> </div>
+                <div style="width:250px; float:left; font-size:11px">Việc đăng ký nguyện vọng phải sửa đổi theo yêu cầu ...</div>
+                <div style="float:left; width:250px;">
+                <table width="250px" border="0" cellpadding="0" cellspacing="0">
+                <tr valign="top">
+                <td width="15"><img src="images/subforum_old-48.png" /></td>
+                <td><div><a style="font-size:11px; color:#ff6701" href="">Phản hồi</a></div></td>
+                <td width="15"><img src="images/subforum_old-48.png" /></td>
+                <td><div><a style="font-size:11px; color:#ff6701" href="">Xem thêm</a></div></td>
+                </tr>
+                
+                </table>
+                </div>
+                
+                </td>
+                <td>
+              <div>
+		<img src = "images/ts4.png" width ="220" height="100"/>
+		</div>
+                </td>
+                </tr>
+                </table>
+                </div>
+                <div class="boxcontent">
+                <table width="100%" border="0" cellpadding="0" cellpadding="0" >
+                <tr valign="top">
+                <td width="50px"><img src="images/forum_old-48.png" /></td>
+                <td width="250px;">
+                <div style="width:250px; float:left"><span><a style="color:#F00; font-size:14px; font-weight:bold" href="">Kết quả thi TN THPT QG 2018</a></span>&nbsp;<span style="font-style:italic; font-size:11px">(602  Viewing)</span> </div>
+                <div style="width:250px; float:left; font-size:11px">Kết quả thi TN THPT năm học 2018 ...</div>
+                <div style="float:left; width:250px;">
+                <table width="250px" border="0" cellpadding="0" cellspacing="0">
+                <tr valign="top">
+                <td width="15"><img src="images/subforum_old-48.png" /></td>
+                <td><div><a style="font-size:11px; color:#ff6701" href="">Phản hồi</a></div></td>
+                <td width="15"><img src="images/subforum_old-48.png" /></td>
+                <td><div><a style="font-size:11px; color:#ff6701" href="">Xem thêm</a></div></td>
+                </tr>
+                
+                </table>
+                </div>
+                
+                </td>
+                <td>
+                <div>
+		<img src = "images/ts5.jpg" width ="220" height="100"/>
+		</div>
+                </td>
+                </tr>
+                </table>
+                </div>
+                <div class="boxcontent">
+                <table width="100%" border="0" cellpadding="0" cellpadding="0" >
+                <tr valign="top">
+                <td width="50px"><img src="images/forum_old-48.png" /></td>
+                <td width="250px;">
+                <div style="width:250px; float:left"><span><a style="color:#F00; font-size:14px; font-weight:bold" href="">Phương án tổ chức kỳ thi trung học phổ thông quốc gia năm học 2017</a></span>&nbsp;<span style="font-style:italic; font-size:11px">(208 Viewing)</span> </div>
+                <div style="width:250px; float:left; font-size:11px">Ai bảo dân kế toán chỉ biết đến những con số ...</div>
+                <div style="float:left; width:250px;">
+                <table width="250px" border="0" cellpadding="0" cellspacing="0">
+                <tr valign="top">
+                <td width="15"><img src="images/subforum_old-48.png" /></td>
+                <td><div><a style="font-size:11px; color:#ff6701" href="">Phản hồi</a></div></td>
+                <td width="15"><img src="images/subforum_old-48.png" /></td>
+                <td><div><a style="font-size:11px; color:#ff6701" href="">Xem thêm</a></div></td>
+                </tr>
+                
+                </table>
+                </div>
+                
+                </td>
+                <td>
+                <div>
+		<img src = "images/ts6.jpg" width ="220" height="100"/>
+		</div>
+                </td>
+                </tr>
+                </table>
+                </div>
+            </div>
+        
+        </div>
+        
+        
+        
+        <div id="box_main">
+        	<div class="category">
+            	<div class="category_name"><a href="">HOẠT ĐỘNG</a></div>
+            </div>
+            <div class="contenth">
+            	
+                
+                
+                
+                
+                <div class="boxcontent">
+                <table width="100%" border="0" cellpadding="0" cellpadding="0" >
+                <tr valign="middle">
+                <td width="50px"><img src="images/forum_old-48.png" /></td>
+                <td width="200px;" style="border-right:solid 1px #CCC">
+                <div style="width:200px; float:left"><span><a style="color:#F00; font-size:14px; font-weight:bold" href="">Thuế môn bài</a></span>&nbsp;<span style="font-style:italic; font-size:11px">(408 Viewing)</span> </div>
+               
+                
+                </td>
+                 <td width="50px"><img src="images/forum_old-48.png" /></td>
+
+                <td width="200px;">
+                <div style="width:200px; float:left"><span><a style="color:#F00; font-size:14px; font-weight:bold" href="">Thuế môn bài</a></span>&nbsp;<span style="font-style:italic; font-size:11px">(408 Viewing)</span> </div>
+               
+                
+                </td>
+                </tr>
+                </table>
+                </div>
+                
+                
+                <div class="boxcontent">
+                <table width="100%" border="0" cellpadding="0" cellpadding="0" >
+                <tr valign="middle">
+                <td width="50px"><img src="images/forum_old-48.png" /></td>
+                <td width="200px;" style="border-right:solid 1px #CCC">
+                <div style="width:200px; float:left"><span><a style="color:#F00; font-size:14px; font-weight:bold" href="">Thuế môn bài</a></span>&nbsp;<span style="font-style:italic; font-size:11px">(408 Viewing)</span> </div>
+               
+                
+                </td>
+                 <td width="50px"><img src="images/forum_old-48.png" /></td>
+
+                <td width="200px;">
+                <div style="width:200px; float:left"><span><a style="color:#F00; font-size:14px; font-weight:bold" href="">Thuế môn bài</a></span>&nbsp;<span style="font-style:italic; font-size:11px">(408 Viewing)</span> </div>
+               
+                
+                </td>
+                </tr>
+                </table>
+                </div>
+                <div class="boxcontent">
+                <table width="100%" border="0" cellpadding="0" cellpadding="0" >
+                <tr valign="middle">
+                <td width="50px"><img src="images/forum_old-48.png" /></td>
+                <td width="200px;" style="border-right:solid 1px #CCC">
+                <div style="width:200px; float:left"><span><a style="color:#F00; font-size:14px; font-weight:bold" href="">Thuế môn bài</a></span>&nbsp;<span style="font-style:italic; font-size:11px">(408 Viewing)</span> </div>
+               
+                
+                </td>
+                 <td width="50px"><img src="images/forum_old-48.png" /></td>
+
+                <td width="200px;">
+                <div style="width:200px; float:left"><span><a style="color:#F00; font-size:14px; font-weight:bold" href="">Thuế môn bài</a></span>&nbsp;<span style="font-style:italic; font-size:11px">(408 Viewing)</span> </div>
+               
+                
+                </td>
+                </tr>
+                </table>
+</div>
+
+   <div id="box_main1">
+        	<div class="category1">
+            	<div class="category_name" style="font-family:Arial,Helvetica, sans-serif"><strong>CONTACT</div>
+            </div>
+            
+            	
+                
+                
+                
+                
+                
+                        <form action="#">
+                                <div class="row">
+                                    <div class="col-xl-6 col-md-6"  style="
+    padding-top: 5px;
+">
+                                            <input type="text" placeholder="Your Name"   style="width:252px;">
+                                    </div>
+                                    <div class="col-xl-6 col-md-6"  style="
+    padding-top: 5px;
+">
+                                            <input type="email" placeholder="Your Email"   style="width:252px;">
+                                    </div>
+                                    <div class="col-xl-6 col-md-6"  style="
+    padding-top: 5px;
+">
+                                            <input type="text" placeholder="Phone no."  style="width:252px;" >
+                                    </div>
+                                    <div class="col-xl-6 col-md-6"  style="
+    padding-top: 5px;width: 505px;
+">
+                                        <input id="datepicker" placeholder="Appointment date"   style="width:252px;">
+                                    </div>
+                                    <div class="col-xl-12"  style="
+    padding-top: 5px;
+">
+                                        <textarea placeholder="Message" style="
+    width: 534px; height:150px"></textarea>
+                                    </div>
+                                    <div class="col-xl-12" style="height:100px; padding-left: 220px">
+                                        <div class="appoinment_button"  style="
+    padding-top: 5px;
+">
+                                            <button class="bt " type="submit" >Submit</button>
+                                        </div>
+ </div>
+                                    </div>
+                                </div>
+        
+                            </form>
+                </div>
+            </div>
+        
+        </div>
     </div>
-    <!-- footer_end -->
-    <!-- footer_end -->
+</div>
+    <div id="right">
+    	<div class="caption_r">Đăng nhập</div>
+         <div class="content">
+         <div style="width:172px; margin:auto; padding-top:10px;">
+         <table width="172" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><div style="font-size:12px; color:#000; font-weight:bold">Tên đăng nhập</div></td>
+  </tr>
+  <tr>
+    <td><input type="text" class="input_tex" /></td>
+  </tr>
+  <tr>
+    <td><div style="font-size:12px; color:#000; margin-top:10px; font-weight:bold">Mật khẩu</div></td>
+  </tr>
+  <tr>
+    <td><input type="password" class="input_tex" /></td>
+  </tr>
+  <tr>
+    <td><div style="margin-top:10px; float:left"><input type="submit" class="input_botom" value="Đăng nhập"></div>
+<div style="margin-top:10px; float:right"><input type="submit" class="input_botom" value="Đăng ký"></div>
+</td>
+  </tr>
+</table>
+
+         
+         </div>
+         
+         
+         
+         
+<div>
+<br>
+<select>
+  <option value="volvo" selected>Vietnamese</option>
+  <option value="saab">English</option>
+  <option value="vw">France</option>
+  <option value="audi" >Chinese</option>
+</select>
+</div>
+        <div class="caption_r" style="margin-top:10px">Hoạt động gần đây</div>
+	<div class="slideshow-container">
+
+<img class="nature" src="images/1.jpg" width="100%" height="170px">
+<img class="nature" src="images/2.jpg" width="100%" height="170px">
+<img class="nature" src="images/3.jpg" width="100%" height="170px">
+
+<script>
+w3.slideshow(".nature", 1000);
+</script>
+         <div class="caption_r" style="margin-top:10px">Liên kết</div>
+          <div class="content">
+          <div style="float:left; width:194px; padding-left:10px; padding-right:10px; text-align:center">
+         	
+           
+            <a  href="" target="_blank"><img style="margin-top:10px" src="images/img3.gif" width="194px" border="0" /></a>
+            <a  href="" target="_blank"><img style="margin-top:10px" src="images/img1.gif" width="194px" border="0" /></a>
+ <a  href="" target="_blank"><img style="margin-top:10px" src="images/img4.png" width="194px" border="0" /></a>
+ <a  href="" target="_blank"><img style="margin-top:10px" src="images/img5.jpg" width="194px" border="0" /></a>
+          
+          </div>
+          </div>
+    </div>
+
+<div style="clear:both"></div>
+</div>
 
 
-    <!-- JS here -->
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/ajax-form.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/scrollIt.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/nice-select.min.js"></script>
-    <script src="js/gijgo.min.js"></script>
-    <script src="js/jquery.slicknav.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/plugins.js"></script>
 
-    <!--contact js-->
-    <script src="js/contact.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/mail-script.js"></script>
-
-    <script src="js/main.js"></script>
-
-    <script>
-            $('#datepicker').datepicker({
-                iconsLibrary: 'fontawesome',
-                // disableDaysOfWeek: [0, 0],
-            //     icons: {
-            //      rightIcon: '<span class="fa fa-caret-down"></span>'
-            //  }
-            });
-            $('#datepicker2').datepicker({
-                iconsLibrary: 'fontawesome',
-                icons: {
-                 rightIcon: '<span class="fa fa-caret-down"></span>'
-             }
-    
-            });
-            var timepicker = $('#timepicker').timepicker({
-             format: 'HH.MM'
-         });
-        </script>
 </body>
-
 </html>
