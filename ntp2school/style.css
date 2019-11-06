@@ -40,7 +40,7 @@ body{margin:0 0 0 0; padding:0 0 0 0; font-family:Arial, Helvetica, sans-serif; 
 #main .wellcome .vien{width:510px; margin:auto; height:30px; border:solid 1px #CCC;-moz-border-radius: 0px 0px 5px 5px;
 	-webkit-border-radius:0px 0px 5px 5px;
 	border-radius:0px 0px 5px 5px;behavior:url(PIE.htc); background:#e1e2e2; font-size:13px; font-style:italic; padding-left:5px; padding-right:5px; padding-top:5px;}
-#top_caption{width:542px; height:30px; float:left; background:		#ADD8E6; -moz-border-radius: 5px 5px 0px 0px;
+#top_caption{width:542px; height:30px; float:left; background:		#c95bea; -moz-border-radius: 5px 5px 0px 0px;
 	-webkit-border-radius:5px 5px 0px 0px;
 	border-radius:5px 5px 0px 0px;behavior:url(PIE.htc); font-size:13px; color:#000; font-weight:bold; padding-top:5px; padding-left:10px; text-shadow: 1px 1px 0 #CCC}
 #top_content{width:555x; float:left; background:	#e1e2e2; padding:5px 5px 5px 5px; border:solid 1px #CCC;-moz-border-radius: 0px 0px 5px 5px;
@@ -56,11 +56,11 @@ body{margin:0 0 0 0; padding:0 0 0 0; font-family:Arial, Helvetica, sans-serif; 
 #box_main .category{width:548px; float:left; text-align:center;height:30px; -moz-border-radius:5px 5px 0 0;
 	-webkit-border-radius:15px 15px 0 0;
 	border-radius:15px 15px 0 0;
-	background: -webkit-gradient(linear, 0 0, 0 bottom, from(	#ADD8E6), to(	#ADD8E6));
-	background: -moz-linear-gradient(	#ADD8E6, 	#ADD8E6);
-	background: linear-gradient(	#ADD8E6, 	#ADD8E6);
-	-pie-background: linear-gradient(	#ADD8E6, 	#ADD8E6);
-	behavior:url(PIE.htc); padding-top:5px ; border-bottom:solid 4px 	#ADD8E6}
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(	#c95bea), to(	#c95bea));
+	background: -moz-linear-gradient(	#c95bea, 	#c95bea);
+	background: linear-gradient(	#c95bea, 	#c95bea);
+	-pie-background: linear-gradient(	#c95bea, 	#c95bea);
+	behavior:url(PIE.htc); padding-top:5px ; border-bottom:solid 4px 	#c95bea}
 #box_main .category1{width:535px; float:left; text-align:center;height:30px; -moz-border-radius:5px 5px 0 0;
 	-webkit-border-radius:15px 15px 0 0;
 	border-radius:15px 15px 0 0;
